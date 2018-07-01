@@ -1,5 +1,5 @@
-import React from 'react'
-import PhotoListItem from './PhotoListItem'
+import React from 'react';
+import PhotoListItem from './PhotoListItem';
 import UUID from 'uuid';
 
 const PhotoList = (props) => {
@@ -11,7 +11,7 @@ const PhotoList = (props) => {
       return (
         <PhotoListItem
           key={UUID()}
-        url={pic.urls.small}
+          url={pic.urls.small}
         />
       );
     });
@@ -23,4 +23,4 @@ const PhotoList = (props) => {
   )
 }
 
-export default PhotoList
+export default PhotoList;

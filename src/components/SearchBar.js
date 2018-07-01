@@ -1,28 +1,15 @@
 import React from 'react';
 
-class SearchBar extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state= {
-      value: ""
-    }
-  }
-
-  handleChange = (event) => {
-    this.setState({
-      value: event.target.value
-    });
-    this.props.onSearchTermChange(this.state.value)
-  }
-
-  render() {
-    return (
-      <form>
-        <input onChange={this.handleChange} type="text" value={this.state.value}></input>
-      </form>
-    )
-  }
+const SearchBar = (props) => {
+  return (
+    <form>
+      <input
+        onChange={props.changeSearchTermState}
+        type="text"
+        placeholder="Search photos"
+        value={props.term}></input>
+    </form>
+  )
 }
 
 export default SearchBar;
