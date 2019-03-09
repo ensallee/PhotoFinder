@@ -7,7 +7,7 @@ const PhotoList = (props) => {
     return <div>Loading...</div>
   }
 
-  const photoItems = props.photos.map((pic)=> {
+  const photoItems = props.photos && props.photos.map((pic)=> {
       return (
         <PhotoListItem
           key={UUID()}
