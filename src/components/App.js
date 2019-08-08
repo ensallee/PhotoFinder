@@ -40,7 +40,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <SearchBar changeSearchTermState={this.changeSearchTermState} value={this.state.term} />
+        <SearchBar changeSearchTermState={this.changeSearchTermState} />
         <PhotoList photos={this.state.photos} />
       </div>
     )
