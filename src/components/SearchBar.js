@@ -7,7 +7,7 @@ const SearchBar = (props) => {
         onChange={props.changeSearchTermState}
         type="text"
         placeholder="Search photos"
-        value={props.term}></input>
+        ></input>
     </form>
   )
 }
